@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   loginUsuario: FormGroup;
   submitted = false;
-  constructor(private fb: FormBuilder, private router:Router) {
+  constructor(private fb: FormBuilder, private router:Router,) {
     this.loginUsuario = this.fb.group({
       email:['', Validators.required],
       pass:['', Validators.required]
